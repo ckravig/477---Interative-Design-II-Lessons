@@ -1,0 +1,85 @@
+:root {
+	--width: 600px;
+	--height: 400px;
+	--circleSize: calc(var(--width)/3);
+}
+
+.flag {
+	margin: 30px;
+	width: var(--width);
+	height: var(--height);
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+/* Flag of Belgium */
+#black {
+	background-color: black;
+	position: absolute;
+	height: var(--height);
+	width: calc(var(--width)/3);
+}
+
+#yellow {
+	background-color: yellow;
+	position: absolute;
+	height: var(--height);
+	width: calc(var(--width)/3);
+	left: calc((var(--width)*(1/3) + 33px));
+	
+}
+
+#red {
+	background-color: red;
+	position: absolute;
+	height: var(--height);
+	width: calc(var(--width)/3);
+	left: calc((var(--width)*(2/3) + 33px));
+	
+}
+
+/* Flag of Japan */
+
+#circle {
+	position: relative;
+	top: calc((var(--height) - var(--circleSize))/2);
+	left: calc(var(--width)/3);
+	background-color: red;
+	height: var(--circleSize);
+	width: var(--circleSize);
+	border-radius: 50%;
+
+}
+
+/* Flag of Trinidad and Tobago */
+#tRed {
+	position: absolute;
+	background-color: red;
+	height: var(--height);
+	width: var(--width);
+	visibility: visible;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#tWhite {
+	position: absolute;
+ 	background-color: white;
+	height: var(--height);
+	width: calc(var(--width)/8);
+	visibility:visible;
+	z-index: 2;
+	overflow: hidden;
+}
+#tBlack {
+	position: absolute;
+	background-color: black;
+	height: 700px;
+	margin-top: -150px;
+	width: calc(var(--width)/6);
+	visibility: visible;
+	z-index: 3;
+	left: calc((var(--width)/2));
+	transform: rotate(-45deg);
+	overflow: hidden;
+}
