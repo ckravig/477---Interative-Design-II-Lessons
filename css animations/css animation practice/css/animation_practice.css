@@ -5,16 +5,19 @@
 html,body {
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
+
+
 
 .grid_container {
 	width: auto;
 	height: auto;
 	position: relative;
-	left: 50%;
-	top: 50%;
-	/* margin-top: -50px;
-	margin-left: -100px; */
+	left: 50vw;
+	top: 50vh;
+	margin-top: -50px;
+	margin-left: -100px;
 	text-align: center;
 }
 
@@ -37,6 +40,7 @@ html,body {
 	margin-left: 5px;
 	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63);
 	animation-iteration-count: 3;
+	animation-delay: 1.5s;
 }
 
 
@@ -63,6 +67,7 @@ html,body {
 	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), n_move 5s ease;
 	animation-iteration-count: 3;
 	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
 	
 }
 
@@ -79,6 +84,7 @@ html,body {
 	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), c_move 5s ease;
 	animation-iteration-count: 3;
 	animation-fill-mode: forwards;
+	animation-delay: 1.5s;
 }
 
 @keyframes a_move {
