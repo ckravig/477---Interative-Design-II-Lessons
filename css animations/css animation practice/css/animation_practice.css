@@ -16,9 +16,11 @@ html,body {
 	position: relative;
 	left: 50vw;
 	top: 50vh;
-	margin-top: -75px;
+	margin-top: -60px;
 	margin-left: -150px;
 	text-align: center;
+	animation: slide 1s ease-in-out forwards;
+	animation-delay: 6.5s;
 }
 
 @keyframes cinema_flicker {
@@ -33,14 +35,41 @@ html,body {
 	100% {color: black;}
 }
 
+@keyframes freeze {
+	0% {color: black;}
+	50% {color: white;}
+	100% {color: rgb(131, 226, 255);}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-40px);
+	}
+}
+
+@keyframes letter-tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .mono {
 	font-family: 'Fjalla One';
 	font-size: 6em;
 	float: left;
 	margin-left: 5px;
-	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63);
-	animation-iteration-count: 3;
-	animation-delay: 1.5s;
+	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), letter-tilt 2s ease-in-out forwards, freeze 5s ease-out forwards;
+	animation-iteration-count: 6, 1, 1;
+	animation-delay: 1.5s, 6.5s, 4.2s;
 }
 
 
@@ -64,10 +93,10 @@ html,body {
 
 .n {
 	position: relative;
-	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), n_move 5s ease;
-	animation-iteration-count: 3;
+	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), n_move 5s ease forwards, letter-tilt 2s ease-in-out forwards, freeze 5s ease-out forwards;
+	animation-iteration-count: 6, 1, 1, 1;
 	animation-fill-mode: forwards;
-	animation-delay: 1.5s;
+	animation-delay: 1.5s, 1.5s, 6.5s, 4.2s;
 	
 }
 
@@ -81,10 +110,10 @@ html,body {
 .c {
 	position: relative;
 	transform-origin: center center;
-	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), c_move 5s ease;
-	animation-iteration-count: 3;
+	animation: cinema_flicker 0.5s cubic-bezier(1,0,1,.63), c_move 5s ease forwards, letter-tilt 2s ease-in-out forwards, freeze 5s ease-out forwards;
+	animation-iteration-count: 6, 1, 1, 1;
 	animation-fill-mode: forwards;
-	animation-delay: 1.5s;
+	animation-delay: 1.5s, 1.5s, 6.5s, 4.2s;
 }
 
 @keyframes a_move {
@@ -115,7 +144,7 @@ html,body {
 	z-index: -1;
 
 	transform-origin: 50% 50%;
-	animation: rotate 9s infinite linear;
+	animation: rotate 9s linear;
 }
 
 @keyframes woah {
@@ -139,7 +168,7 @@ html,body {
 	z-index: -1;
 
 	transform-origin: 50% 50%;
-	animation: woah 4s infinite cubic-bezier(1,0,0,1);
+	animation: woah 4s  cubic-bezier(1,0,0,1);
 }
 
 
