@@ -1,0 +1,50 @@
+/* All CSS styles go here */
+.eye {
+    width: 200px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: 1px solid black;
+    border-radius: 75% 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.iris  {
+    width: 72px;
+    height: 72px;
+    background-color: #222f3e;
+    border-radius: 50%;
+    border: 30px solid #ef888c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lid {
+    width: 300px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* background: red; */
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.lid span {
+    display: block;
+    width: 100%;
+    height: 0%;
+    background: #ef888c;
+    border-radius: 0 0 60% 60%;
+    transition: 0.4s all;
+}
+
+.eye:hover .lid span {
+    height: 100%;
+}
