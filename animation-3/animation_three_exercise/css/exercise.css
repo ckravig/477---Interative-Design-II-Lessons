@@ -1,1 +1,188 @@
-/* All CSS styles go here */
+body {
+	background: black;
+}
+
+.square	{
+
+	height: 600px;
+	width: 600px;
+	background: gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.square-box	{
+
+	height: 600px;
+	width: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+
+.topleft	{
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.topcenter	{
+
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	opacity: 1;
+	transition: 1s;
+	
+}
+
+.topright	{
+
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.middleleft	{
+
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	opacity: 1;
+	transition: 1s;
+	
+}
+
+.middlecenter	{
+
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	opacity: 1;
+	transition: 1s;
+	
+}
+
+.middleright	{
+
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.bottomleft	{
+
+	position: absolute;
+	top: 400px;
+	left: 0px;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.bottomcenter	{
+
+	position: absolute;
+	top: 400px;
+	left: 200px;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.bottomright	{
+
+	position: absolute;
+	top: 400px;
+	left: 400px;
+	opacity: 1;
+	transition: 1s;
+
+}
+
+.square-box:hover .topleft {
+	
+	transform: translate(-200px, -200px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .topcenter {
+	
+	transform: translate(0px, -200px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .topright {
+	
+	transform: translate(200px, -200px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .middleleft {
+	
+	transform: translate(-200px, 0px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .middlecenter {
+	
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .middleright {
+	
+	transform: translate(200px, 0px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .bottomleft {
+	
+	transform: translate(-200px, 200px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .bottomcenter {
+	
+	transform: translate(0px, 200px);
+	opacity: 0;
+	transition: 1s;
+	
+}
+
+.square-box:hover .bottomright {
+	
+	transform: translate(200px, 200px);
+	opacity: 0;
+	transition: 1s;
+	
+}
