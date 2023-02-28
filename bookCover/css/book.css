@@ -1,0 +1,138 @@
+/* Global Variables */
+:root {
+    --coverHeight: 600px;
+    --coverWidth: 400px
+}
+
+
+/* All CSS styles go here */
+
+.canvas {
+    height: var(--coverHeight);
+    width: var(--coverWidth);
+    top: calc(50vh - calc(var(--coverHeight)/2));
+    left: calc(50vw - calc(var(--coverWidth)/2));
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    z-index: -10;
+}
+
+.asset {
+    position: absolute;
+}
+
+.logo {
+    top: -300px;
+    animation: logo 3s forwards ease;
+    animation-delay: 13s;
+}
+
+@keyframes logo {
+    0% { top: -300px}
+    100% { top: 0px}
+}
+
+.sky {
+    z-index: -5;
+    /* filter: brightness(0); */
+    animation: sky 10s forwards ease;
+}
+
+@keyframes sky {
+    0% { filter: brightness(0);}
+    100% { filter: brightness(1)}
+}
+
+.darkMovingFilter {
+    z-index: -1;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    height: var(--coverHeight);
+    width: var(--coverWidth);
+    /* filter: brightness(); */
+    /* animation: darkMovingFilter 10s forwards ease; */
+}
+
+@keyframes darkMovingFilter {
+    0% { top: 0px;}
+    100% { top: -600px;}
+}
+
+.dragon {
+    z-index: -1;
+    top: 600px;
+    animation: dragon 3s forwards ease;
+    animation-delay: 11s;
+}
+
+@keyframes dragon {
+    0% { top: 600px}
+    100% { top: 0px}
+}
+
+.author {
+    left: -200px;
+    animation: author 3s forwards ease;
+    animation-delay: 17s;
+}
+
+@keyframes author {
+    0% { left: -200px}
+    100% { left: 0px}
+}
+
+.title {
+    /* top: 100px; */
+    visibility: hidden;
+    animation: title 5s forwards ease;
+    animation-delay: 16s;
+}
+
+@keyframes title {
+    0% { visibility: hidden;}
+    100% { visibility: visible;}
+}
+
+.bone {
+    left: -500px;
+    animation: bone 3s forwards ease;
+    animation-delay: 7s;
+}
+
+@keyframes bone {
+    0% { left: -500px}
+    100% { left: 0px}
+}
+
+.map {
+    left: -500px;
+    animation: map 3s forwards ease;
+    animation-delay: 7s;
+}
+
+@keyframes map {
+    0% { left: -500px}
+    100% { left: 0px}
+}
+
+.dust {
+    visibility: hidden;
+    animation: dust 3s forwards ease;
+    animation-delay: 11s;
+}
+
+@keyframes dust {
+    0% { visibility: hidden}
+    100% { visibility: visible}
+}
+
+.rocks {
+    top: 600px;
+    animation: rocks 3s forwards ease;
+    animation-delay: 6s;
+}
+
+@keyframes rocks {
+    0% { top: 600px}
+    100% { top: 0px}
+}
