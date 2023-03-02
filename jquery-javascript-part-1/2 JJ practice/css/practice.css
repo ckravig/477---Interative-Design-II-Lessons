@@ -1,0 +1,30 @@
+body {
+
+}
+
+p {
+    color: black
+}
+
+.topText {
+    top: calc(50vh - 50px);
+    left: calc(50vw - 100px);
+}
+
+.button {
+    height: 100px;
+    width: 200px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 20px;
+    position: relative;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 100px);
+}
+
+.buttonDark {
+    background-color: rgb(62, 62, 62);
+}
+
+.buttonLight {
+    background-color: white;
+}

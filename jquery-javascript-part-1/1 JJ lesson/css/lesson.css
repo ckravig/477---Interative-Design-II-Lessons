@@ -1,0 +1,69 @@
+/* green square styles */
+.green {
+   width: 200px; 
+   height: 200px; 
+   background: green;
+}
+
+.new {
+   animation: animate 2s forwards;
+}
+ 
+@keyframes animate {
+     0% { left: 100px; color: black; }
+     100% { left: 300px; color: red; }
+}
+
+/* red square styles */
+.red {
+   width: 100px;
+   height: 100px;
+   background: red;
+   position: absolute;
+   top: 220px;
+   left: 50px;
+   display: none;
+}
+
+/* CSS style for basic text element */
+.switch {
+   font-family: Verdana;
+   color: blue;
+   font-size: 6em;
+}
+
+/* animation for basic text element */
+p {
+   position: absolute;
+   top: 380px;
+   left: 100px;
+}
+
+.new {
+	animation: animate 2s forwards;
+}
+
+@keyframes animate {
+   0% { left: 100px; color: black; }
+   100% { left: 300px; color: red; }
+}
+
+/* blue square styles */
+.blue {
+   width: 100px;
+   height: 100px;
+   background: blue;
+   position: absolute;
+   top: 600px;
+   left: 50px;
+}
+
+/* black square styles */
+.black {
+   width: 100px;
+   height: 100px;
+   background: black;
+   position: absolute;
+   top: 450px;
+   left: 50px;
+{
