@@ -4,6 +4,13 @@
     --coverWidth: 400px
 }
 
+/* Pause animations for testing */
+/* * {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    animation-play-state: paused !important;
+    animation-fill-mode: forwards !important;
+} */
 
 /* All CSS styles go here */
 
@@ -71,26 +78,40 @@
 }
 
 .author {
-    left: -200px;
+    opacity: 0;
+    filter: blur(10px);
+    /* left: -200px; */
     animation: author 3s forwards ease;
-    animation-delay: 17s;
+    animation-delay: 19s;
 }
 
 @keyframes author {
-    0% { left: -200px}
-    100% { left: 0px}
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
 
 .title {
-    /* top: 100px; */
-    visibility: hidden;
+    opacity: 0;
+    filter: blur(10px);
     animation: title 5s forwards ease;
     animation-delay: 16s;
 }
 
 @keyframes title {
-    0% { visibility: hidden;}
-    100% { visibility: visible;}
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
 
 .bone {
@@ -116,15 +137,39 @@
 }
 
 .dust {
-    visibility: hidden;
+    opacity: 0;
+    filter: blur(10px);
     animation: dust 3s forwards ease;
-    animation-delay: 11s;
+    animation-delay: 19s;
+    /* animation-delay: 11s; */
+    /* animation-play-state: paused; */
 }
 
 @keyframes dust {
-    0% { visibility: hidden}
-    100% { visibility: visible}
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
 }
+/* 
+.dustHitBox {
+    z-index: 100;
+    top: 350px;
+    left: 260px;
+    width: 90px;
+    height: 120px;
+    border: 1px solid red;
+    background-color: white;
+} 
+
+.dustHitBox:hover ~ .dust{
+    visibility: visible;
+    animation: dust 1s forwards ease-in-out;
+} */ 
 
 .rocks {
     top: 600px;
